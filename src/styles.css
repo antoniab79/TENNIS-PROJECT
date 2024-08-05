@@ -1,12 +1,26 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #272044;
   margin: 0;
 }
+
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
+.nav-link {
+  color: #e8edf6;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: wheat;
+  font-weight: 600;
+}
+
+.logo {
+  max-height: 60px;
+}
 .text-center {
   text-align: center;
 }
@@ -17,6 +31,10 @@ body {
 
 .grid-2-col {
   grid-template-columns: auto auto;
+}
+
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-grid-3-col {
@@ -35,6 +53,14 @@ body {
 .card-body {
   padding: 30px;
 }
+
+.card-body h4 {
+  padding-bottom: 20px;
+}
+
+.card-body h5 {
+  padding-bottom: 10px;
+}
 .card ul {
   font-style: normal;
   font-weight: 400;
@@ -47,9 +73,11 @@ body {
 }
 .card-footer {
   padding: 0 30px 30px;
+  color: white !important;
 }
+
 .img-reponsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 .btn {
@@ -65,6 +93,21 @@ body {
   background-color: #272044;
   text-decoration: none;
 }
+
+.btn:hover {
+  display: block;
+  color: #272044;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: wheat;
+  text-decoration: none;
+}
+
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -109,7 +152,6 @@ header a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-
   text-align: center;
   color: #272044;
   padding: 16px 32px;
@@ -118,6 +160,21 @@ header a {
   letter-spacing: 3px;
   text-transform: uppercase;
   background: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 20px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #272044;
   text-decoration: none;
 }
 
@@ -154,7 +211,7 @@ main h4 {
 
 main h5 {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.5;
   color: #272044;
   margin: 0;
@@ -182,10 +239,15 @@ footer {
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../images/temporary_bg.png");
+    url("../images/hard_court.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+
+.email-link {
+  text-decoration: none;
+  color: white;
 }
 
 footer h3 {
@@ -205,6 +267,7 @@ footer ul {
   padding: 0;
 }
 footer li {
+  font-weight: 500;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -212,7 +275,6 @@ footer li {
 
 footer a {
   color: white;
-  opacity: 0.7;
 }
 @media (max-width: 900px) {
   header {
@@ -236,5 +298,13 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .nav-link {
+    color: #e8edf6;
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    color: wheat;
+    font-weight: 600;
   }
 }
