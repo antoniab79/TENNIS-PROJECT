@@ -35,9 +35,30 @@ body {
   margin: 30px 0;
 }
 .grid-2-col {
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 
+.carousel {
+  grid-template-columns: 1fr 2fr;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-inner h5 {
+  color: #D7EF01;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.carousel-inner h6 {
+  color: #D7EF01;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -239,10 +260,10 @@ main p {
   line-height: 1;
 }
 .copyright a {
-text-decoration: none;
-font-weight: 600;
-color: blanchedalmond;
-text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: blanchedalmond;
+  text-transform: uppercase;
 }
 
 footer {
